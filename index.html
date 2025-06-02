@@ -1,16 +1,104 @@
 <!DOCTYPE html>
-<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Partnerschaftsverein Grebenstein e.V.</title>
-<link rel="stylesheet" href="style.css"></head><body>
-<nav><a href="index.html" class="active">Start</a><a href="ueber-uns.html" class="">Über uns</a><a href="partnerstaedte.html" class="">Partnerstädte</a><a href="aktivitaeten.html" class="">Aktivitäten</a><a href="galerie.html" class="">Galerie</a><a href="kontakt.html" class="">Kontakt</a><a href="quellen.html" class="">Quellen</a><a href="datenschutz.html" class="">Datenschutz</a></nav>
-<header class="hero">
-  <h1>Freundschaft lebt.</h1>
-  <p>Grebenstein verbindet Menschen aus Frankreich, Italien und den Niederlanden seit 1989 – eine gelebte Ringpartnerschaft für Europa.</p>
-  <a class="btn" href="ueber-uns.html">Mehr erfahren</a>
-</header>
-<section class="container">
-  <h2>Kurz & kompakt</h2>
-  <p>Der <strong>Partnerschaftsverein Grebenstein e.V.</strong> pflegt die Ringpartnerschaft zwischen Grebenstein (Deutschland), Lezoux (Frankreich), Lopik (Niederlande) und Sarsina (Italien). Mit Bürgerreisen, Schüleraustausch und Jugendcamps bringen wir jedes Jahr hunderte Menschen zusammen – und zeigen, dass Europa im Kleinen funktioniert.</p>
-  <p><a class="btn" href="partnerstaedte.html">Unsere Partnerstädte entdecken</a></p>
-</section>
-<footer>&copy; 2025 Partnerschaftsverein Grebenstein e.V.</footer></body></html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Partnerschaftsverein Grebenstein e.V. – Freundschaft lebt</title>
+
+  <!-- Basis-SEO -->
+  <meta name="description"
+        content="Der Partnerschaftsverein Grebenstein e.V. pflegt seit 1989 die Ring­partnerschaft mit Lezoux (FR), Lopik (NL) und Sarsina (IT). Bürger­reisen, Schüler­austausch & Jugend­camps.">
+  <link rel="canonical" href="https://pv-grebenstein.de/">
+
+  <!-- Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Performance: CSS preload, falls JS blockiert Fallback per <noscript> -->
+  <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Partnerschaftsverein Grebenstein e.V.">
+  <meta property="og:description" content="Europa im Kleinen – Grebenstein verbindet Menschen aus Frankreich, Italien und den Niederlanden.">
+  <meta property="og:url"         content="https://pv-grebenstein.de/">
+  <meta property="og:image"       content="https://pv-grebenstein.de/assets/hero-grebenstein.webp">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- Strukturierte Daten -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type":   "Organization",
+    "name":    "Partnerschaftsverein Grebenstein e.V.",
+    "url":     "https://pv-grebenstein.de",
+    "logo":    "https://pv-grebenstein.de/assets/logo.svg",
+    "sameAs":  ["https://www.facebook.com/pv.grebenstein"],
+    "foundingDate":"1991-11-14",
+    "memberOf": { "@type":"Organization","name":"Stadt Grebenstein" }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <!-- Kopf & Navigation -->
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Start</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="partnerstaedte.html">Partnerstädte</a></li>
+        <li><a href="aktivitaeten.html">Aktivitäten</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="quellen.html">Quellen</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Haupt­inhalt -->
+  <main id="main">
+    <section class="hero"
+             style="background-image:url('assets/hero-grebenstein.webp')"
+             role="img"
+             aria-label="Blick über Grebenstein">
+      <div class="hero-inner">
+        <h1>Freundschaft lebt.</h1>
+        <p>Grebenstein verbindet Menschen aus Frankreich, Italien und den Niederlanden seit 1989 – gelebte Ringpartnerschaft für Europa.</p>
+        <p><a class="btn" href="ueber-uns.html">Mehr erfahren</a></p>
+      </div>
+    </section>
+
+    <section class="container intro">
+      <h2>Kurz &amp; kompakt</h2>
+      <p>Der <strong>Partnerschaftsverein Grebenstein e.V.</strong> hält die Ringpartnerschaft zwischen Grebenstein (DE), Lezoux (FR), Lopik (NL) und Sarsina (IT) lebendig. Mit Bürgerreisen, Schüleraustausch und Jugendcamps bringen wir jedes Jahr hunderte Menschen zusammen – und zeigen, dass Europa im Kleinen funktioniert.</p>
+      <p><a class="btn" href="partnerstaedte.html">Unsere Partnerstädte entdecken</a></p>
+    </section>
+  </main>
+
+  <!-- Fußzeile -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Partnerschaftsverein Grebenstein e.V.</p>
+  </footer>
+
+  <!-- Sanftes Scrollen nur wenn Motion OK -->
+  <script>
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const id = a.getAttribute('href');
+          const target = document.querySelector(id);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({behavior: 'smooth'});
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>
